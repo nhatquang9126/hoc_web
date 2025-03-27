@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, black, red); 
+    background-attachment: fixed;
+}
+
+
+
+.profile, .skills, .projects, .blog, .hobbies, .contact {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); 
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.hobbies {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a.button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hobby:hover {
+    transform: scale(1.1);
+}
+
+.hobby img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.profile {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.skills .skill {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.progress {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.html { width: 90%; background: #f16529; }
+.java { width: 80%; background: #f7df1e; }
+.C { width: 75%; background: #61dafb; }
+
+.projects .project, .blog article {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects .project:hover, .blog article:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.future-goals {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.goals-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.goal {
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.goal:hover {
+    transform: scale(1.05);
+}
+
+.goal img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.goal h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.contact {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chào Mừng Đến Với Trang Cá Nhân Của Tôi</h1>
+    </header>
+
+    <section class="profile">
+        <img src="nhatquang.jpg" alt="Ảnh đại diện">
+        <h2>Phan Ngô Nhật Quang</h2>
+        <p><strong>Giới thiệu:</strong> Tôi là một lập trình viên đam mê công nghệ, thích khám phá các công nghệ mới và xây dựng phần mềm sáng tạo.</p>
+    </section>
+
+    <section class="hobbies">
+        <h2>Sở Thích Cá Nhân</h2>
+        <div class="hobby-list">
+            <div class="hobby">
+                <img src="https://img.lovepik.com/free-png/20210919/lovepik-listen-to-the-music-png-image_400360163_wh1200.png" alt="Nghe nhạc">
+                <p><a href="#" class="button">Nghe Nhạc</a></p>
+            </div>
+            <div class="hobby">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLmBQSYC56mdMkFB06_mcUJNlM-7x3W1iD2A&s" alt="Du lịch">
+                <p><a href="http://127.0.0.1:5500/dulich.html" class="button">Du Lịch</a></p>
+            </div>
+            <div class="hobby">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUrUgfJ94fACzprM-JIphnvKB_BhxOb7jhUg&s" alt="Đọc sách">
+                <p><a href="#" class="button">Đọc Sách</a></p>
+            </div>
+            <div class="hobby">
+                <img src="https://genk.mediacdn.vn/139269124445442048/2020/10/10/extralarge-1601994026-cover-image-16023321290641936639180.jpg" alt="Chơi game">
+                <p><a href="http://127.0.0.1:5500/choigame.html" class="button">Chơi Game</a></p>
+            </div>
+
+            <div class="hobby">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVdHXMJ8yAuk8FTYWwHUg0CBnnEhCh0YYtQg&s" alt="Ăn uống">
+                <p><a href="http://127.0.0.1:5500/monan.html" class="button">Ăn uống</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Kỹ Năng</h2>
+        <div class="skill">
+            <p>HTML & CSS</p>
+            <div class="progress">
+                <div class="progress-bar html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Java</p>
+            <div class="progress">
+                <div class="progress-bar java"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>C++</p>
+            <div class="progress">
+                <div class="progress-bar C"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Dự Án Nổi Bật</h2>
+        <div class="project">
+            <h3>Quản lý sinh viên</h3>
+            <p>Một ứng dụng giúp bạn quản lý điểm của sinh viên dễ dàng hơn.</p>
+            <a href="https://github.com/nhatquang9126/student-manager" class="btn">Xem chi tiết</a>
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2>Bài Viết Mới Nhất</h2>
+        <article>
+            <h3>Cách Học Lập Trình Hiệu Quả</h3>
+            <p>Bạn muốn trở thành lập trình viên giỏi? Hãy đọc bài viết này để biết những bí quyết học tập hiệu quả!</p>
+            <a href="https://codelearn.io/sharing/tro-thanh-lap-trinh-vien-gioi-ban-can-hoc-nhu-the-nao" class="btn">Đọc thêm</a>
+        </article>
+    </section>
+
+    <section class="future-goals">
+        <h2>Định Hướng Tương Lai</h2>
+        <p>Tôi luôn mong muốn phát triển bản thân và đạt được những mục tiêu quan trọng trong sự nghiệp.</p>
+        <div class="goals-list">
+            <div class="goal">
+                <img src="https://eaut.edu.vn/wp-content/uploads/2021/06/3-1.png" alt="Lập trình giỏi hơn">
+                <h3>Trở thành lập trình viên chuyên nghiệp</h3>
+                <p>Tiếp tục học hỏi, rèn luyện kỹ năng lập trình và tham gia các dự án thực tế.</p>
+            </div>
+            <div class="goal">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2024/12/kham-pha-tri-tue-nhan-tao-ai-la-gi-va-tai-sao-no-quan-trong.jpg" alt="Học về AI">
+                <h3>Nghiên cứu về AI & Machine Learning</h3>
+                <p>Khám phá và áp dụng AI vào thực tế để tạo ra sản phẩm hữu ích.</p>
+            </div>
+            <div class="goal">
+                <img src="https://indivisys.vn/wp-content/uploads/2024/05/4.png" alt="Khởi nghiệp công nghệ">
+                <h3>Khởi nghiệp công nghệ</h3>
+                <p>Xây dựng một sản phẩm phần mềm có giá trị, giúp ích cho nhiều người.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact">
+        <h2>Thông Tin Liên Hệ</h2>
+        <p>Email: <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">nhatquang09012006@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/nhatquang9126">https://github.com/nhatquang9126</a></p>
+        <p>Facebook: <a href="https://web.facebook.com/profile.php?id=100040398886745&locale=vi_VN">Nhật Quang</a></p>
+        <p>Số điện thoại: 0707698906</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Thiết kế bởi Phan Ngô Nhật Quang</p>
+    </footer>
+</body>
+</html>
